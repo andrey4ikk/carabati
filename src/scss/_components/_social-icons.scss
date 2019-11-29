@@ -1,0 +1,92 @@
+.social-icon{
+	width: 24px; height: 24px;
+	position: relative;
+	display: inline-block;
+
+		&:before,
+		&:after{
+			position: absolute;
+			content: '';
+			transition: opacity .3s;
+		}
+
+		&:before{
+			opacity: 1;
+		}
+		&:after{
+			opacity: 0;
+		}
+
+		&:hover{
+			&:before{
+				opacity: 0;
+			}
+			&:after{
+				opacity: 1;
+			}
+		}
+
+		&__text{
+			text-indent: -999em;
+			display: inline-block;
+		}	
+
+		&-facebook{
+
+				&:before{
+					@include sprite-facebook;
+				}
+				&:after{
+					@include sprite-facebook-hover;
+				}
+
+				&-footer{
+					&:before{
+						@include sprite-footer-facebook;
+					}
+					&:after{
+						@include sprite-footer-facebook-hover;
+					}
+				}
+
+		}
+
+		&-instagram{
+
+				&:before{
+					@include sprite-instagram;
+				}
+				&:after{
+					@include sprite-instagram-hover;
+				}
+
+				&-footer{
+					&:before{
+						@include sprite-footer-instagram;
+					}
+					&:after{
+						@include sprite-footer-instagram-hover;
+					}
+				}
+
+		}
+		&-pinterest{
+
+				&:before{
+					@include sprite-pinterest;
+				}
+				&:after{
+					@include sprite-pinterest-hover;
+				}
+
+				&-footer{
+					&:before{
+						@include sprite-footer-pinterest;
+					}
+					&:after{
+						@include sprite-footer-pinterest-hover;
+					}
+				}
+
+		}
+}

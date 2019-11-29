@@ -1,0 +1,7 @@
+@mixin transit {
+	transition: .3s ease;
+
+	&:hover {
+		transition: .3s ease;
+	}
+}

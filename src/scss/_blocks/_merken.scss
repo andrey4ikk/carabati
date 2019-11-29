@@ -1,0 +1,200 @@
+.merken {
+	margin: {
+		top: 106px;
+		bottom: 112px;
+	}
+	
+	.container {
+		max-width: 1425px;
+		padding: 0 30px;
+	}
+	
+	&__top-title {
+		color: $bl;
+		font-family: $avenir-db;
+		font-size: rem(56);
+		line-height: rem(62);
+		letter-spacing: 1.68px;
+		margin: 0 auto 28px;
+	}
+
+	&__top-text {
+		color: $dgrey;
+		font-family: $noto-kr-m;
+		letter-spacing: 0.32px;
+		line-height: rem(24);
+		margin: 0 auto 22px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 13.5%;
+		margin: {
+			left: 0.9%;
+			right: 2.56%;
+			bottom: 47px;
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			// padding: 1.24% 1.9%;
+			padding: 15.3% 1.9%;
+			background-color: $lgrey;
+			transition: all .3s;
+
+			&:hover{
+				box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+			}
+		}
+
+		&:nth-of-type(6n) {
+			margin-right: 0.8%;
+		}
+	}
+}
+
+
+// media 1800
+
+@media (max-width: 1799px) {}
+
+
+// media 1600
+
+@media (max-width: 1599px) {}
+
+
+// media 1400
+
+@media (max-width: 1399px) {}
+
+
+// media 1200
+
+@media (max-width: 1199px) {
+
+	.merken {
+		margin-top: 40px;
+
+		&__item {
+			a {
+				padding: {
+					right: 5%;
+					left: 5%;
+				}
+			}
+		}
+	}
+	
+}
+
+
+// media 992
+
+@media (max-width: 991px) {
+
+	.merken {
+		&__item {
+			width: 21.8%;
+			margin: {
+				right: 2.5%;
+				left: 1%;
+			}
+
+			&:nth-of-type(6n) {
+				margin-right: 2.5%;
+			}
+
+			&:nth-of-type(4n) {
+				margin-right: 1%;
+			}
+		}
+	}
+	
+}
+
+
+// media 768
+
+@media (max-width: 767px) {
+
+	.merken {
+		&__top-title {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 20px;
+		}
+		
+		&__item {
+			width: 30.3%;
+			margin: {
+				right: 2.5%;
+				left: 1%;
+			}
+
+			&:nth-of-type(6n) {
+				margin-right: 2.5%;
+			}
+
+			&:nth-of-type(4n) {
+				margin-right: 2.5%;
+			}
+
+			&:nth-of-type(3n) {
+				margin-right: 1%;
+			}
+		}
+	}
+	
+}
+
+
+// media 576
+
+@media (max-width: 575px) {
+
+	.merken {
+		.container {
+			padding: 0 15px;
+		}
+
+		&__top-title {
+			font-size: 2rem;
+			line-height: 2.25rem;
+			margin-bottom: 15px;
+		}
+		
+		&__item {
+			width: 47.2%;
+			margin: {
+				right: 2.5% !important;
+				left: 1% !important;
+			}
+
+			// &:nth-of-type(6n) {
+			// 	margin-right: 2.5%;
+			// }
+
+			// &:nth-of-type(4n) {
+			// 	margin-right: 2.5%;
+			// }
+
+			// &:nth-of-type(3n) {
+			// 	margin-right: 1%;
+			// }
+
+			&:nth-of-type(2n) {
+				margin-right: 1% !important;
+			}
+		}
+	}
+	
+}

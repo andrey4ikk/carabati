@@ -1,0 +1,6 @@
+/*.sublime-project
+/*.sublime-workspace
+/.vscode
+/node_modules
+src/style.css
+package-lock.json

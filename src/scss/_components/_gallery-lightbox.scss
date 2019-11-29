@@ -1,0 +1,112 @@
+#slb_viewer_wrap .slb_theme_slb_default .slb_container{
+	border-radius: 0;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_details,
+#slb_viewer_wrap .slb_theme_slb_default .slb_controls .slb_slideshow .slb_template_tag{
+	display: none !important;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_controls{
+	top: -16px !important;  
+	right: -16px !important;
+	margin: 0;
+	position: absolute !important;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_controls .slb_close .slb_template_tag{
+	width: 35px; height: 35px;
+	top: 0; right: 0;
+	position: absolute;
+	cursor: pointer;
+	background: #454c52 !important;
+	z-index: 10;
+	opacity: 1;
+
+		&:before,
+		&:after{
+			top: 50%; left: 50%;
+			position: absolute;
+			margin-left: -10px;
+			margin-top: -3px;
+			width: 20px; height: 4px;
+			background: #fff;
+			content: '';
+			transform:rotate(-45deg);
+			transition: all .3s;
+		}
+		&:before{
+			transform:rotate(45deg);
+		}
+
+		&:hover{
+				&:before,
+				&:after{
+					background: $primary-color;
+				}
+		}
+}
+
+#slb_viewer_wrap .slb_theme_slb_default .slb_content .slb_prev .slb_template_tag{
+	background: none !important;
+	opacity: 1 !important;
+
+		&:before,
+		&:after{
+			width: 20px; height: 4px;
+			top: 50%; left: 0;
+			background: $primary-color;
+			position: absolute;
+			content: '';
+			z-index: 1;
+			border-radius: 4px;
+			box-shadow: 0 1px 0 rgba(0,0,0,.8);
+			transition: background .3s;
+		}
+		&:before{
+			transform: rotate(45deg);
+			z-index: 2;
+		}
+		&:after{
+			margin-top: -12px;
+			transform: rotate(-45deg);
+		}
+
+		&:hover{
+				
+				&:before,
+				&:after{
+					background: lighten($primary-color, 10%);
+				}
+		}
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_content .slb_next .slb_template_tag{
+	background: none !important;
+	opacity: 1 !important;
+
+		&:before,
+		&:after{
+			width: 20px; height: 4px;
+			top: 50%; right: 0;
+			background: $primary-color;
+			position: absolute;
+			content: '';
+			z-index: 1;
+			border-radius: 4px;
+			box-shadow: 0 1px 0 rgba(0,0,0,.8);
+			transition: background .3s;
+		}
+		&:before{
+			transform: rotate(-45deg);
+			z-index: 2;
+		}
+		&:after{
+			margin-top: -12px;
+			transform: rotate(45deg);
+		}
+
+		&:hover{
+				
+				&:before,
+				&:after{
+					background: lighten($primary-color, 10%);
+				}
+		}
+}

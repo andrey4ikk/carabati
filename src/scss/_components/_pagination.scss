@@ -1,0 +1,35 @@
+.pagination {
+	margin-top: 88px;
+
+	&__items {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin: 0 25px 20px;
+
+		a {
+			color: $ldgrey;
+			font: {
+				family: $noto-kr-b;
+				weight: bold;
+			}
+			letter-spacing: 0.48px;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: color .3s;
+
+				&:hover{
+					color: $red;
+				}
+		}
+
+		&.current-page {
+			a {
+				color: $dgrey !important;
+			}
+		}
+	}
+}

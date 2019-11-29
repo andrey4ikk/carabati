@@ -1,0 +1,16 @@
+
+        .headline {
+            color: $bl;
+            font-family: $avenir-r;
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: 1.68px;
+            line-height: 61.6px;
+        }
+
+        .wsw .wp-block-media-text .wp-block-media-text__media {
+            &:first-child {
+                padding-right: 0 !important;
+            }
+        }
+

@@ -1,0 +1,42 @@
+.media {
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #f9f9f9;
+    max-height: 40px;
+
+    &__publication-time {
+        span {
+            color: #c4c4c4;
+            font-family: $noto-kr-m;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__socials {
+        ul {
+            display: flex;
+
+            li {
+                text-decoration: none;
+                padding-left: 0;
+
+                &:before {
+                    display: none;
+
+                }
+
+                &:last-child {
+                    padding-left: 29px;
+                }
+            }
+        }
+    }
+}
+
+.wsw p {
+    margin-top: 20px;
+    }
+

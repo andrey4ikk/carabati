@@ -1,0 +1,17 @@
+@mixin button-hover-border($color: #fff, $hover-color:$red, $border-color: $red){
+	position: relative;
+	color: $color !important;
+	transition: all .3s;
+
+		&::before{
+	        border: 2px solid $border-color;
+	        top: 0; left: 0; bottom: 0; right: 0;
+	        position: absolute;
+	        content: '';
+	    }
+
+	    &:hover{
+	    	color: $hover-color !important;
+	    	background-color: transparent;
+	    }
+}

@@ -1,0 +1,58 @@
+.section-header{
+		&__title{
+			color: #272626;
+			font-family: $avenir-db;
+			font-size: rem(56);
+			letter-spacing: 1.68px;
+
+				@media($xs-max){
+					font-size: 40px;
+				}
+
+				&-block{
+					margin-bottom: 27px;
+				}
+
+		}
+		&__text{
+			color: #767676;
+			font-family: $noto-kr-r;
+			font-size: rem(16);
+			letter-spacing: 0.32px;
+			line-height: rem(24);
+		}
+
+		&_has-border{
+			padding-bottom: 35px;
+			margin-bottom: 42px;
+			border-bottom: 6px solid #F9F9F9;
+		}
+}
+
+.section-header-calc{
+
+		.section-header{
+
+				&__text{
+					max-width: 876px;
+					padding-left: 116px;
+					position: relative;
+
+						&:before{
+							top: 7px; left: 15px;
+							position: absolute;
+							content: '';
+							@include sprite-calculator-gray;
+						}
+
+						@media($xs-max){
+							padding-top: 90px;
+							padding-left: 0;
+
+								&:before{
+									left: 0;
+								}
+						}
+				}
+		}
+}

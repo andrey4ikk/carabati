@@ -1,0 +1,375 @@
+%svg-common {
+	background: url("assets/img/sprite.svg") no-repeat;
+}
+
+@mixin sprite-address {
+	@extend %svg-common;
+	background-position: 92.21453287197232% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-address-hover {
+	@extend %svg-common;
+	background-position: 98.44290657439447% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-black-arrow {
+	@extend %svg-common;
+	background-position: 92.85714285714286% 63.94485683987275%;
+	width: 40px;
+	height: 40px;
+}
+
+@mixin sprite-calculator {
+	@extend %svg-common;
+	background-position: 74.46808510638297% 65.33044420368364%;
+	width: 80px;
+	height: 80px;
+}
+
+@mixin sprite-calculator-gray {
+	@extend %svg-common;
+	background-position: 91.02112676056338% 64.76906552094522%;
+	width: 64px;
+	height: 64px;
+}
+
+@mixin sprite-down-arrow {
+	@extend %svg-common;
+	background-position: 96.01731601731602% 63.07531380753138%;
+	width: 26px;
+	height: 14px;
+}
+
+@mixin sprite-down-arrow-hover {
+	@extend %svg-common;
+	background-position: 94.89177489177489% 63.07531380753138%;
+	width: 26px;
+	height: 14px;
+}
+
+@mixin sprite-employee {
+	@extend %svg-common;
+	background-position: 84.86725663716814% 65.1891891891892%;
+	width: 76px;
+	height: 76px;
+}
+
+@mixin sprite-facebook {
+	@extend %svg-common;
+	background-position: 95.67847882454625% 64.07563025210084%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-facebook-hover {
+	@extend %svg-common;
+	background-position: 96.62921348314607% 64.07563025210084%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-footer-facebook {
+	@extend %svg-common;
+	background-position: 97.57994814174589% 64.07563025210084%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-footer-facebook-hover {
+	@extend %svg-common;
+	background-position: 98.53068280034572% 64.07563025210084%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-footer-instagram {
+	@extend %svg-common;
+	background-position: 99.48141745894554% 64.07563025210084%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-footer-instagram-hover {
+	@extend %svg-common;
+	background-position: 75.54019014693172% 67.54201680672269%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-footer-pinterest {
+	@extend %svg-common;
+	background-position: 93.25259515570934% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-footer-pinterest-hover {
+	@extend %svg-common;
+	background-position: 94.29065743944636% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-grey-arrow {
+	@extend %svg-common;
+	background-position: 93.78238341968913% 63.80952380952381%;
+	width: 20px;
+	height: 36px;
+}
+
+@mixin sprite-home-breadcrumbs {
+	@extend %svg-common;
+	background-position: 73.62732382187635% 67.5775091960063%;
+	width: 23px;
+	height: 23px;
+}
+
+@mixin sprite-home-breadcrumbs-hover {
+	@extend %svg-common;
+	background-position: 72.63294422827497% 67.5775091960063%;
+	width: 23px;
+	height: 23px;
+}
+
+@mixin sprite-icon-del {
+	@extend %svg-common;
+	background-position: 79.7157622739018% 67.25941422594143%;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin sprite-icon-del-hover {
+	@extend %svg-common;
+	background-position: 79.11283376399655% 67.25941422594143%;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin sprite-icon-duplicate {
+	@extend %svg-common;
+	background-position: 77.15517241379311% 67.32984293193718%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin sprite-icon-duplicate-hover {
+	@extend %svg-common;
+	background-position: 77.84482758620689% 67.32984293193718%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin sprite-instagram {
+	@extend %svg-common;
+	background-position: 74.5894554883319% 67.54201680672269%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-instagram-hover {
+	@extend %svg-common;
+	background-position: 94.72774416594642% 64.07563025210084%;
+	width: 22px;
+	height: 22px;
+}
+
+@mixin sprite-pinterest {
+	@extend %svg-common;
+	background-position: 95.3287197231834% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-pinterest-hover {
+	@extend %svg-common;
+	background-position: 99.48096885813149% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-points {
+	@extend %svg-common;
+	background-position: 96.76584734799482% 62.77980218636127%;
+	width: 17px;
+	height: 5px;
+}
+
+@mixin sprite-search {
+	@extend %svg-common;
+	background-position: 76.42487046632124% 67.47114375655823%;
+	width: 20px;
+	height: 20px;
+}
+
+@mixin sprite-sketch {
+	@extend %svg-common;
+	background-position: 88.15207780725022% 65.11879049676025%;
+	width: 74px;
+	height: 74px;
+}
+
+@mixin sprite-sluit {
+	@extend %svg-common;
+	background-position: 78.50064627315813% 67.294610151753%;
+	width: 15px;
+	height: 15px;
+}
+
+@mixin sprite-smartphone {
+	@extend %svg-common;
+	background-position: 96.36678200692042% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-smartphone-hover {
+	@extend %svg-common;
+	background-position: 97.40484429065744% 65.5099894847529%;
+	width: 24px;
+	height: 24px;
+}
+
+@mixin sprite-star {
+	@extend %svg-common;
+	background-position: 81.48804251550044% 65.25974025974025%;
+	width: 78px;
+	height: 78px;
+}
+
+@mixin sprite-tick-white {
+	@extend %svg-common;
+	background-position: 96.5992251399053% 63.171622326551905%;
+	width: 13px;
+	height: 9px;
+}
+
+@mixin sprite-tiles {
+	@extend %svg-common;
+	background-position: 78.01418439716312% 65.33044420368364%;
+	width: 80px;
+	height: 80px;
+}
+
+@mixin sprite-tiles-calc-01 {
+	@extend %svg-common;
+	background-position: 34.35114503816794% 0;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-calc-02 {
+	@extend %svg-common;
+	background-position: 45.80152671755725% 0;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-home-01 {
+	@extend %svg-common;
+	background-position: 100% 26.37795275590551%;
+	width: 656px;
+	height: 402px;
+}
+
+@mixin sprite-tiles-home-02 {
+	@extend %svg-common;
+	background-position: 62.047569803516026% 65.4639175257732%;
+	width: 402px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-home-03 {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 329px;
+	height: 402px;
+}
+
+@mixin sprite-tiles-inner-page-01 {
+	@extend %svg-common;
+	background-position: 100% 52.75590551181102%;
+	width: 656px;
+	height: 402px;
+}
+
+@mixin sprite-tiles-merkdetail-01 {
+	@extend %svg-common;
+	background-position: 22.900763358778626% 0;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-merkdetail-02 {
+	@extend %svg-common;
+	background-position: 57.25190839694657% 0;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-newsoverview-01 {
+	@extend %svg-common;
+	background-position: 100% 0;
+	width: 656px;
+	height: 402px;
+}
+
+@mixin sprite-tiles-newsoverview-02 {
+	@extend %svg-common;
+	background-position: 22.900763358778626% 65.4639175257732%;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-roomdetails-01 {
+	@extend %svg-common;
+	background-position: 45.80152671755725% 65.4639175257732%;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-roomdetails-02 {
+	@extend %svg-common;
+	background-position: 34.35114503816794% 65.4639175257732%;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-roomsoverview-01 {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-roomsoverview-02 {
+	@extend %svg-common;
+	background-position: 11.450381679389313% 65.4639175257732%;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-thankyou-01 {
+	@extend %svg-common;
+	background-position: 0 65.4639175257732%;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-vloertegels-01 {
+	@extend %svg-common;
+	background-position: 68.70229007633588% 0;
+	width: 240px;
+	height: 762px;
+}
+
+@mixin sprite-tiles-vloertegels-02 {
+	@extend %svg-common;
+	background-position: 11.450381679389313% 0;
+	width: 240px;
+	height: 762px;
+}
+

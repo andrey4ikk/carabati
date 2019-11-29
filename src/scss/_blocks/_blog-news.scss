@@ -1,0 +1,307 @@
+.blog-news {
+	position: relative;
+	margin: {
+		top: 51px;
+		bottom: 155px;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		@include sprite-tiles-newsoverview-02;
+		bottom: 10.7%;
+		left: 0;
+		z-index: -1;
+	}
+
+	.container {
+		position: relative;
+		max-width: 1425px;
+		padding: 0 30px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 30.8%;
+			height: 171px;
+			background-color: $yel;
+			left: -10.6%;
+			bottom: -32px;
+			z-index: -1;
+		}
+	}
+
+	&__header {
+		color: $bl;
+		font-family: $avenir-b;
+		font-size: rem(56);
+		letter-spacing: 1.68px;
+		line-height: rem(62);
+		margin-bottom: 45px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 32%;
+		background-color: #ffffff;
+		text-decoration: none;
+		padding-bottom: 50px;
+		margin: {
+			right: 2%;
+			bottom: 30px;
+		}
+
+		&_first {
+			display: flex;
+			flex-wrap: wrap;
+			width: 66%;
+
+			.blog-news__image {
+				width: 48.1%;
+
+				img {
+					height: 100% !important;
+				}
+			}
+
+			.blog-news__information {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 40.7%;
+				margin-left: 8.5%;
+				padding: 0;
+
+				.blog-news__title {
+					font-size: rem(36);
+					line-height: rem(40);
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+			margin-right: 0;
+
+			.blog-news__description {
+				display: none;
+			}
+		}
+
+		&:nth-of-type(5n) {
+			margin-right: 0;
+		}
+	}
+
+	&__image {
+		img {
+			width: 100% !important;
+			object-fit: cover;
+		}
+	}
+
+	&__information {
+		padding: 0 10%;
+	}
+
+	&__date {
+		display: block;
+		color: $ldgrey;
+		font-family: $noto-kr-m;
+		text-transform: uppercase;
+		margin-top: 44px;
+	}
+
+	&__title {
+		color: $bl;
+		font-family: $avenir-db;
+		font-size: rem(24);
+		line-height: rem(26);
+
+		margin: {
+			top: 13px;
+			bottom: 28px;
+		}
+	}
+
+	&__description {
+		color: $dgrey;
+		font-family: $noto-kr-r;
+		letter-spacing: 0.32px;
+		line-height: rem(24);
+	}
+
+	&__link {
+		margin-top: 28px;
+
+		&::before {
+			margin-right: 10px;
+		}
+	}
+}
+
+
+// media 1800
+
+@media (max-width: 1799px) {}
+
+
+// media 1600
+
+@media (max-width: 1599px) {}
+
+
+// media 1400
+
+@media (max-width: 1399px) {}
+
+
+// media 1200
+
+@media (max-width: 1199px) {
+
+	.blog-news {
+		&__item {
+			&_first {
+				.blog-news__date {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	
+}
+
+
+// media 992
+
+@media (max-width: 991px) {
+
+	.blog-news {
+		margin-bottom: 120px;
+		
+		&__header {
+			font-size: 3.25rem;
+		}
+
+		&__item {
+			width: 48%;
+			margin-right: 4%;
+
+			&_first {
+				width: 100%;
+				margin-right: 0;
+
+				.blog-news__image {
+					max-height: 100%;
+				}
+			}
+
+			&:nth-of-type(2) {
+				.blog-news__description {
+					display: block;
+				}
+			}
+
+			&:nth-of-type(2n) {
+				margin-right: 4%;
+			}
+			
+			&:nth-of-type(2n+1) {
+				margin-right: 0;
+			}
+		}
+
+		&__image {
+			max-height: 33vw;
+			overflow: hidden;
+		}
+	}
+	
+}
+
+
+// media 768
+
+@media (max-width: 767px) {
+
+	.blog-news {
+		margin-top: 40px;
+
+		.container {
+			padding: 0 15px;
+		}
+
+		&__header {
+			font-size: 3rem;
+			line-height: 3.5rem;
+		}
+
+		&__item {
+			&_first {
+				.blog-news__information {
+					width: 47%;
+					margin-left: 4%;
+
+					.blog-news__title {
+						font-size: 2rem;
+						line-height: 2.25rem;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+
+		&__title {
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+			margin-bottom: 17px;
+		}
+	}
+	
+}
+
+
+// media 576
+
+@media (max-width: 575px) {
+
+	.blog-news {
+		&__item {
+			width: 100%;
+			margin-right: 0 !important;
+			padding-bottom: 30px;
+
+			&_first {
+				.blog-news__image {
+					width: 100%;
+					max-height: 68vw;
+				}
+
+				.blog-news__information {
+					width: 100%;
+				}
+
+				.blog-news__date {
+					margin-top: 30px;
+				}
+			}
+		}
+
+		&__image {
+			max-height: 68vw;
+		}
+
+		&__information {
+			padding: 0 7%;
+		}
+
+		&__date {
+			margin-top: 30px;
+		}
+	}
+	
+}

@@ -1,0 +1,85 @@
+/*
+Theme Name: Carobati
+Theme URI:
+Author: Conversal
+Version: 1.0
+Author URI: https://www.conversal.be
+*/
+
+// mixins
+
+@import "_mixins/rem.sass";
+@import "_mixins/placeholder.sass";
+@import "_mixins/clearfix";
+@import "_mixins/svg-sprite";
+@import "_mixins/selection";
+@import "_mixins/grayscale";
+@import "_mixins/responsive";
+@import "_mixins/button-hover";
+@import "_mixins/tap";
+@import "_mixins/transition";
+
+
+// base
+
+@import "_base/vars";
+@import "_base/fonts";
+@import "_base/reset";
+@import "_base/libs";
+@import "_base/layout";
+
+
+// components
+
+@import "_components/more-info";
+@import "_components/pagination";
+@import "_components/jquery-ui";
+@import "_components/custom-checkbox-radio";
+@import "_components/wpforms";
+@import "_components/form";
+@import "_components/button";
+@import "_components/gallery-lightbox";
+@import "_components/social-icons";
+@import "_components/search";
+@import "_components/breadcrumb";
+@import "_components/gallery";
+
+
+// blocks
+
+@import "_blocks/header";
+@import "_blocks/main-banner";
+@import "_blocks/4b_News_Detail";
+@import "_blocks/roomDetails";
+@import "_blocks/7b-Merk-detail";
+@import "_blocks/inner-page";
+@import "_blocks/5-Vloertegels";
+@import "_blocks/6b-FAQ-Details";
+@import "_blocks/_Koopjeshal";
+@import "_blocks/Vloertegels-categorie";
+@import "_blocks/footer";
+@import "_blocks/cookie";
+@import "_blocks/inner-page";
+@import "_blocks/aantal-tegels";
+@import "_blocks/specialist";
+@import "_blocks/rooms-overview";
+@import "_blocks/top-news";
+@import "_blocks/blog-news";
+@import "_blocks/merken";
+@import "_blocks/faq-overview";
+@import "_blocks/faq-tabs";
+@import "_blocks/thankyou";
+@import "_blocks/aanbod";
+@import "_blocks/section-header";
+@import "_blocks/calc";
+@import "_blocks/slider-blocks";
+@import "_blocks/top-photo-slider";
+@import "_blocks/trends.scss";
+@import "_blocks/gestelde-vragen";
+@import "_blocks/contact";
+@import "_blocks/page-404";
+
+
+// media 
+
+@import "_base/media"

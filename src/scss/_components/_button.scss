@@ -1,0 +1,54 @@
+.button{
+	width: auto;
+	padding: 23px 15px 23px;
+	color:#fff;
+	font-family: $noto-kr-b;
+	font-weight: bold;
+	font-size: 14px;
+	border:none;
+	cursor:pointer;
+	display:inline-block;
+	overflow: visible;
+	text-decoration:none !important;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	border: 2px solid;
+	transition: all .3s;
+
+		// @media(@xs-max){
+		// 	font-size: 12px;
+		// }
+
+		&__text{
+			display: block;
+			line-height: 1;
+			transition: all .3s;
+		}
+		
+
+		&_style-01{
+			color: #272626 !important;
+			background: #272626;
+
+				.button__text{
+					color: #fff !important;
+					transition: color .3s;
+				}
+
+				&:hover{
+					color: $primary-color !important;
+					background: $primary-color;
+
+						.button__text{
+							
+						}
+				}
+		}
+
+		&_tiny{
+			padding: 7px 10px 6px;
+			min-width: 140px;
+			font-size: 12px;
+		}
+}

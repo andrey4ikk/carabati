@@ -1,0 +1,41 @@
+.section{
+	@include clearfix;
+}
+.section-middle{
+	width: 100%;
+	margin: 0 auto;
+	@include clearfix;
+
+		.container{
+			max-width: 1166px;
+			padding-left: 15px;
+			padding-right: 15px;
+			@include clearfix;
+		}
+}
+.has-sidebar{
+		.main-content{
+			width: 59%;
+			float: left;
+			position: relative;
+			z-index: 10;
+
+				@media($sm-max){
+					width: 100% !important;
+					float: none;
+				}
+
+		}
+
+		.sidebar{
+			width: 38.7%;
+			float: right;
+			position: relative;
+			z-index: 10;
+
+			@media($sm-max){
+				width: 100% !important;
+				float: none;
+			}
+		}
+}

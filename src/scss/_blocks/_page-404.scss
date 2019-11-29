@@ -1,0 +1,32 @@
+.page-404{
+	padding: 100px 0;
+	text-align: center;
+	font-size: 16px;
+
+		a{
+			color: $primary-color;
+
+				&:hover{
+					text-decoration: none;
+				}
+		}
+
+		&__error{
+			font-size: rem(150);
+			font-weight: bold;
+			position: relative;
+			color: fade-out($primary-color, .2);
+			line-height: 1;
+			text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+		}
+
+		&__text {
+			line-height: 2rem;
+			padding: 0 15px;
+		}
+
+		&__text{
+			line-height: 2rem;
+			padding: 0 15px;
+		}
+}
